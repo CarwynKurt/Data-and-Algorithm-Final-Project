@@ -13,5 +13,10 @@ n = len(lst)
 for i in range(n):
     for j in range(0, n-i-1):
         # Plotting
+        plt.bar(x, lst)
+        plt.pause(0.001)
+        plt.clf()
+        if lst[j] > lst[j+1]:
+            lst[j], lst[j+1] = lst[j+1], lst[j]
 
 # Bubble sort plot
