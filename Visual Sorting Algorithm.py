@@ -1,23 +1,9 @@
-# Import packages
-import matplotlib.pyplot as plt
-import numpy as np
-
-# Values for chart
-amount = 15
-
-lst = np.random.randint(0, 100, 15)
-x = np.arange(0, amount, 1)
-
-# Bubble sort
-n = len(lst)
-for i in range(n):
-    for j in range(0, n-i-1):
-        # Plotting
-        plt.bar(x, lst)
-        plt.pause(0.001)
-        plt.clf()
-        if lst[j] > lst[j+1]:
-            lst[j], lst[j+1] = lst[j+1], lst[j]
-
-# Bubble sort plot
-plt.show()
+# Brand New Improvements
+# Import Packages
+# Bubble Sort
+# Insertion Sort
+# Selection Sort
+# Merge Sort
+# Input Values
+# Menu
+# Displaying Sort Graph
