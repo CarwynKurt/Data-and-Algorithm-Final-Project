@@ -20,3 +20,4 @@ for i in range(n):
             lst[j], lst[j+1] = lst[j+1], lst[j]
 
 # Bubble sort plot
+plt.show()
