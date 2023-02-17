@@ -61,6 +61,65 @@ def SelectionSort(amount):
     plt.show()
 
 # Merge Sort
+def MergeSort(amount):
+    num = [random.randint(0, 1000) for _ in range(amount)]
+
+    def merge_sort(lst, left, right):
+
+        if left >= right:
+            return
+
+        mid = (left + right) // 2
+
+        plt.bar(list(range(amount)), lst)
+        plt.pause(0.001)
+        plt.clf()
+
+        merge_sort(lst, left, mid)
+        merge_sort(lst, mid + 1, right)
+
+        plt.bar(list(range(amount)), lst)
+        plt.pause(0.001)
+        plt.clf()
+
+        merge(lst, left, right, mid)
+        plt.bar(list(range(amount)), lst)
+        plt.pause(0.001)
+        plt.clf()
+
+    def merge(lst, left, right, mid):
+
+        l_cy = lst[left:mid + 1]
+        r_cy = lst[mid + 1:right + 1]
+
+        l_cou = r_cou = 0
+
+        count = left
+
+        while l_cou < (len(l_cy)) and r_cou < (len(r_cy)):
+            if l_cy[l_cou] <= r_cy[r_cou]:
+                lst[count] = l_cy[l_cou]
+                l_cou += 1
+            else:
+                lst[count] = r_cy[r_cou]
+                r_cou += 1
+
+            count += 1
+
+        while l_cou < (len(l_cy)):
+            lst[count] = l_cy[l_cou]
+            l_cou += 1
+            count += 1
+
+        while l_cou < (len(r_cy)):
+            lst[count] = r_cy[r_cou]
+            r_cou += 1
+            count += 1
+
+    merge_sort(num, 0, len(num) - 1)
+    plt.bar(list(range(amount)), num)
+    plt.show()
+
 # Input Values
 # Menu
 # Displaying Sort Graph
