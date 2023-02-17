@@ -121,5 +121,10 @@ def MergeSort(amount):
     plt.show()
 
 # Input Values
+amount = int(input('Enter an integer: '))
+
+if amount <= 10:
+    amount = 15
+
 # Menu
 # Displaying Sort Graph
