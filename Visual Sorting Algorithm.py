@@ -135,3 +135,11 @@ sort = int(input('''~~~MENU~~~
 Enter: '''))
 
 # Displaying Sort Graph
+if sort == 1:
+    BubbleSort(amount)
+elif sort == 2:
+    SelectionSort(amount)
+elif sort == 3:
+    InsertionSort(amount)
+elif sort == 4:
+    MergeSort(amount)
