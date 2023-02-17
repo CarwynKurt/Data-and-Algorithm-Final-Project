@@ -127,4 +127,11 @@ if amount <= 10:
     amount = 15
 
 # Menu
+sort = int(input('''~~~MENU~~~
+\t 1.) Bubble Sort
+\t 2.) Selection Sort
+\t 3.) Insertion Sort
+\t 4.) Merge Sort
+Enter: '''))
+
 # Displaying Sort Graph
