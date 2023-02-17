@@ -23,6 +23,26 @@ def BubbleSort(amount):
     plt.show()
 
 # Insertion Sort
+def InsertionSort(amount):
+    lst = np.random.randint(0, 100, amount)
+    x = np.arange(0, amount, 1)
+
+    n = len(lst)
+
+    for k in range(1, n):
+        key = lst[k]
+        l = k - 1
+        while l >= 0 and key < lst[l]:
+            lst[l + 1] = lst[l]
+            l = l - 1
+            plt.bar(x, lst)
+            plt.pause(0.001)
+            plt.clf()
+        else:
+            lst[l + 1] = key
+
+    plt.show()
+
 # Selection Sort
 # Merge Sort
 # Input Values
