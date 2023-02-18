@@ -143,3 +143,5 @@ elif sort == 3:
     InsertionSort(amount)
 elif sort == 4:
     MergeSort(amount)
+
+#Source of Visual Sorting Algorithm: https://youtu.be/IRkvlqPBqNg
